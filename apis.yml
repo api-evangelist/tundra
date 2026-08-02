@@ -1,8 +1,23 @@
 aid: tundra
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tundra.png
 name: Tundra
-description: 'Tundra is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Tundra is a business-to-business wholesale marketplace that connects independent retailers
+  with brands and suppliers, letting shop owners discover, source, and order wholesale products across
+  categories online. Backed by Redpoint Ventures, the company operates in the ecommerce sector. As of
+  this enrichment pass Tundra exposes no public API, developer portal, or machine-readable API surface:
+  live probes of tundra.com found no developer/api/docs subdomains and no /.well-known discovery
+  documents, and the public www.tundra.com storefront was reachable but served an expired TLS certificate.'
 url: https://raw.githubusercontent.com/api-evangelist/tundra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ecommerce
+- Marketplace
+- Wholesale
+- Retail
+- B2B
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tundra-domain-security.yml
 - type: Website
   url: https://www.tundra.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
